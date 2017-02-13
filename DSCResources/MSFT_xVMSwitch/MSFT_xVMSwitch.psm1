@@ -283,6 +283,20 @@ function Test-TargetResource
                 return $false
             }
         }
+        else 
+        {
+            # Switch does not exist 
+            # If switch is desired to be absent, return $true
+            if ($Ensure -eq 'Absent')
+            {
+                return $true
+            }
+            else 
+            {
+                # If switch was desired to be present, return $false
+                return $false
+            }
+        }
     }
 
     # If no switch was present

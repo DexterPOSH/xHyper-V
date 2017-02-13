@@ -89,6 +89,7 @@ Please see the Examples section for more details.
 ## Versions
 
 ### Unreleased
+- MSFT_xVMSwitch: Fix Test-TargetResource to return status if the xVMSwitch is not present
 
 ### 3.7.0.0
 * Adding a new resource
